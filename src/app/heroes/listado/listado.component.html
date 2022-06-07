@@ -3,6 +3,9 @@
 <div *ngIf="heroeBorrado">
     <h3>Héroe Borrardo: <small>{{heroeBorrado}}</small></h3>
 </div>
+<div *ngIf="!heroeBorrado">
+    <h3>No ha borrado nada</h3>
+</div>
 
 <button (click)="borrarHeroe()">Borrar</button>
 
