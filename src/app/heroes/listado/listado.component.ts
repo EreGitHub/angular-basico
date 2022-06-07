@@ -5,5 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './listado.component.html',
 })
 export class ListadoComponent {
-  heroes: string[] = ['Aquaman', 'Superman', 'Batman', 'Flash'];
+  heroes: string[] = ['Aquaman', 'Superman', 'Batman', 'Flash', 'Wonder'];
+  heroeBorrado: string = '...';
+
+  borrarHeroe() {
+    // this.heroeBorrado = this.heroes.pop()!;
+    this.heroeBorrado = this.heroes.pop() || '';
+  }
 }
