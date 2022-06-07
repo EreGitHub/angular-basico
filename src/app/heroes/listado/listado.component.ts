@@ -4,4 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-listado',
   templateUrl: './listado.component.html',
 })
-export class ListadoComponent {}
+export class ListadoComponent {
+  heroes: string[] = ['Aquaman', 'Superman', 'Batman', 'Flash'];
+}
